@@ -48,13 +48,13 @@
     <p>Twin Trace (&ldquo;we&rdquo;, &ldquo;the app&rdquo;) respects your privacy. This policy explains what data the app handles and why. By using Twin Trace you agree to this policy.</p>
 
     <div class="callout">
-      <strong>The short version:</strong> You can play without signing in, and your progress is saved on your device. Signing in is optional &mdash; it backs your save up to our cloud so it survives reinstalls and syncs across devices. The app shows ads through Google AdMob, which uses a device advertising identifier. We do not sell your data, and you can ask us to delete your cloud save at any time.
+      <strong>The short version:</strong> Your progress is saved on your device. If your device is already signed in to Google Play Games, the app signs you in automatically when it starts and backs your save up to our cloud, so it survives reinstalls and syncs across devices. You can sign out at any time in Settings, and you can ask us to delete your cloud save. The app shows ads through Google AdMob, which uses a device advertising identifier. We do not sell your data.
     </div>
 
     <h2>Information we collect</h2>
     <ul>
-      <li><strong>Game data</strong> — your level progress, points, hints, achievements, and settings. Stored on your device, and — only if you sign in — backed up to our cloud (Google Firebase Firestore) so it can sync across your devices and survive reinstalls.</li>
-      <li><strong>Account information</strong> — if you choose to sign in (via Google or Play Games), we receive basic account identifiers (name, email, account ID) to identify and secure your saved game. Signing in is optional.</li>
+      <li><strong>Game data</strong> — your level progress, points, hints, achievements, and settings. Always stored on your device, and — while you are signed in — backed up to our cloud (Google Firebase Firestore) so it can sync across your devices and survive reinstalls.</li>
+      <li><strong>Account information</strong> — when you are signed in (via Play Games or Google), we receive basic account identifiers (name, email, account ID) to identify and secure your saved game. <strong>If your device is already signed in to Google Play Games, this happens automatically when you first open the app, without a separate prompt</strong> — that is how Play Games works across games. If your device is not signed in to Play Games, no account is created and nothing is uploaded unless you sign in yourself. You can sign out at any time in Settings, which stops the cloud backup.</li>
       <li><strong>Device &amp; usage data</strong> — to keep the app stable and to show ads, our providers may collect a device advertising identifier, app diagnostics, and crash reports.</li>
       <li><strong>Support requests</strong> — if you email us, we receive the information you choose to send (such as your email address and the contents of your message), and we use it only to respond to you.</li>
     </ul>
@@ -79,7 +79,7 @@
     </ul>
 
     <h2>Data retention &amp; deletion</h2>
-    <p>If you never sign in, your game data stays on your device and we hold nothing at all. Cloud-saved game data is kept while your account exists. To delete it, follow our <a href="https://hitennsoni.github.io/twin-trace-privacy/delete-account.html">account &amp; data deletion</a> instructions, or email us requesting deletion and we will remove your stored game document. Any support email you send is kept only as long as needed to resolve your request.</p>
+    <p>If you are never signed in, your game data stays on your device and we hold nothing at all. Cloud-saved game data is kept while your account exists. To delete it, follow our <a href="https://hitennsoni.github.io/twin-trace-privacy/delete-account.html">account &amp; data deletion</a> instructions, or email us requesting deletion and we will remove your stored game document. Any support email you send is kept only as long as needed to resolve your request.</p>
 
     <h2>Security</h2>
     <p>Data that leaves your device &mdash; cloud save, sign-in, and purchases &mdash; is encrypted in transit and handled by Google&rsquo;s secure infrastructure. Your cloud save is stored under your own account identifier and our database rules only permit that signed-in account to read or write it. Uninstalling the app removes its on-device data.</p>
@@ -89,8 +89,8 @@
 
     <h2>Your rights &amp; choices</h2>
     <ul>
-      <li>Play without signing in — the game is fully playable with no account.</li>
-      <li>Sign out at any time (Settings &rarr; Cloud Save &rarr; Sign out).</li>
+      <li>Sign out at any time (Settings &rarr; Cloud Save &rarr; Sign out) — this stops the cloud backup, and the game stays fully playable with no account.</li>
+      <li>Turn off automatic sign-in for games in the Google Play Games app's own settings, if you would rather it never happen.</li>
       <li>Decline ad consent to receive only non-personalized ads.</li>
       <li>Reset or limit your advertising ID in your device settings.</li>
       <li>Manage notification permissions in your device settings.</li>
