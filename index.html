@@ -23,6 +23,10 @@
     ul { padding-left: 20px; }
     a { color: #4361ee; }
     code { background: rgba(67,97,238,.1); padding: 1px 5px; border-radius: 4px; }
+    .callout {
+      background: rgba(67,97,238,.08); border-left: 3px solid #4361ee;
+      padding: 12px 16px; border-radius: 6px; margin: 16px 0;
+    }
     footer { margin-top: 40px; font-size: 0.85rem; color: #6b7280; border-top: 1px solid #e5e7eb; padding-top: 16px; }
     @media (prefers-color-scheme: dark) {
       body { color: #e5e7eb; background: #0b0b12; }
@@ -30,6 +34,7 @@
       .updated, footer { color: #9aa0ac; }
       footer { border-top-color: #23232f; }
       code { background: rgba(142,162,255,.15); }
+      .callout { background: rgba(142,162,255,.12); border-left-color: #8ea2ff; }
     }
   </style>
 </head>
@@ -37,20 +42,28 @@
   <div class="wrap">
     <header>
       <h1>Twin Trace — Privacy Policy</h1>
-      <div class="updated">Last updated: 11 July 2026</div>
+      <div class="updated">Last updated: 17 July 2026</div>
     </header>
 
     <p>Twin Trace (&ldquo;we&rdquo;, &ldquo;the app&rdquo;) respects your privacy. This policy explains what data the app handles and why. By using Twin Trace you agree to this policy.</p>
 
+    <div class="callout">
+      <strong>The short version:</strong> You can play without signing in, and your progress is saved on your device. Signing in is optional &mdash; it backs your save up to our cloud so it survives reinstalls and syncs across devices. The app shows ads through Google AdMob, which uses a device advertising identifier. We do not sell your data, and you can ask us to delete your cloud save at any time.
+    </div>
+
     <h2>Information we collect</h2>
     <ul>
-      <li><strong>Game data</strong> — your level progress, coins, hints, achievements, and settings. Stored on your device, and — only if you sign in — backed up to our cloud (Google Firebase Firestore) so it can sync across your devices and survive reinstalls.</li>
+      <li><strong>Game data</strong> — your level progress, points, hints, achievements, and settings. Stored on your device, and — only if you sign in — backed up to our cloud (Google Firebase Firestore) so it can sync across your devices and survive reinstalls.</li>
       <li><strong>Account information</strong> — if you choose to sign in (via Google or Play Games), we receive basic account identifiers (name, email, account ID) to identify and secure your saved game. Signing in is optional.</li>
       <li><strong>Device &amp; usage data</strong> — to keep the app stable and to show ads, our providers may collect a device advertising identifier, app diagnostics, and crash reports.</li>
+      <li><strong>Support requests</strong> — if you email us, we receive the information you choose to send (such as your email address and the contents of your message), and we use it only to respond to you.</li>
     </ul>
 
     <h2>Advertising</h2>
-    <p>We show ads through <strong>Google AdMob</strong>, which may use a device advertising identifier to serve and measure ads. In regions that require it (such as the EU/UK), you will be asked for consent before personalized ads are shown, in line with Google&rsquo;s consent requirements.</p>
+    <p>We show ads through <strong>Google AdMob</strong>, which may use a device advertising identifier to serve and measure ads. In regions that require it (such as the EU/UK), you will be asked for consent before personalized ads are shown, in line with Google&rsquo;s consent requirements. If you decline, you will still see ads &mdash; just non-personalized ones.</p>
+
+    <h2>Purchases</h2>
+    <p>In-app purchases (points packs and the Pro upgrade) are processed entirely by <strong>Google Play</strong> using Google Play Billing. We never see or receive your payment details &mdash; we are only told that a purchase completed, so the app can unlock what you bought.</p>
 
     <h2>Analytics &amp; crash reporting</h2>
     <p>We use <strong>Firebase Crashlytics</strong> to detect and fix crashes. Crash reports contain diagnostic information (device model, OS version, stack traces) and are not linked to the contents of your account beyond an anonymous identifier.</p>
@@ -66,18 +79,24 @@
     </ul>
 
     <h2>Data retention &amp; deletion</h2>
-    <p>Cloud-saved game data is kept while your account exists. To delete your cloud data, sign out and email us at the address below requesting deletion; we will remove your stored game document.</p>
+    <p>If you never sign in, your game data stays on your device and we hold nothing at all. Cloud-saved game data is kept while your account exists. To delete it, follow our <a href="https://hitennsoni.github.io/twin-trace-privacy/delete-account.html">account &amp; data deletion</a> instructions, or email us requesting deletion and we will remove your stored game document. Any support email you send is kept only as long as needed to resolve your request.</p>
+
+    <h2>Security</h2>
+    <p>Data that leaves your device &mdash; cloud save, sign-in, and purchases &mdash; is encrypted in transit and handled by Google&rsquo;s secure infrastructure. Your cloud save is stored under your own account identifier and our database rules only permit that signed-in account to read or write it. Uninstalling the app removes its on-device data.</p>
 
     <h2>Children</h2>
     <p>Twin Trace is not directed to children under 13. We do not knowingly collect personal information from children. If you believe a child has provided us personal information, contact us and we will delete it.</p>
 
-    <h2>Your choices</h2>
+    <h2>Your rights &amp; choices</h2>
     <ul>
-      <li>Play without signing in.</li>
+      <li>Play without signing in — the game is fully playable with no account.</li>
       <li>Sign out at any time (Settings &rarr; Cloud Save &rarr; Sign out).</li>
+      <li>Decline ad consent to receive only non-personalized ads.</li>
       <li>Reset or limit your advertising ID in your device settings.</li>
       <li>Manage notification permissions in your device settings.</li>
+      <li>Request access to, export of, or deletion of your cloud-saved data.</li>
     </ul>
+    <p>If you have a privacy question or request &mdash; including under laws such as the GDPR (EU/UK) or the CCPA (California) &mdash; email us and we will respond.</p>
 
     <h2>Contact</h2>
     <p>Questions or requests? Email <a href="mailto:hitennsoni@gmail.com">hitennsoni@gmail.com</a>.</p>
